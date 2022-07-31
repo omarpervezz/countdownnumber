@@ -1,0 +1,40 @@
+:root {
+	--borderColor: #03A9F3;
+}
+
+.fancy-border {
+	position: relative;
+	border: 1px solid #03A9F3;
+}
+
+.fancy-border::before,
+.fancy-border::after {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.fancy-border::before {
+	top: -5px;
+	left: -5px;
+	border-top: 1px solid var(--borderColor);
+	border-left: 1px solid var(--borderColor);
+}
+
+.fancy-border::after {
+	right: -5px;
+	bottom: -5px;
+	border-bottom: 1px solid var(--borderColor);
+	border-right: 1px solid var(--borderColor);
+}
+
+.fancy-border:hover::before,
+.fancy-border:hover::after {
+	width: calc(100% + 9px);
+	height: calc(100% + 9px);
+}
+
+/*# sourceMappingURL=fancyborder.css.map */

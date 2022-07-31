@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CountDown Tools:</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CountDown Tools:</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="./css/custom css/style.css">
-    
-</head>
-<body>
-    
-     <h1 class="result-output top-value"></h1>
-     <button id="changeTheme">Change Theme</button>
+      <link rel="stylesheet" href="./css/custom css/style.css">
+      <link rel="stylesheet" href="./css/third party css//fancyborder.css">
+   </head>
+   <body>
+      <h1 class="result-output top-value"></h1>
+      <button id="changeTheme">remove background</button>
       <!---count down box-->
-      <div class="main-box">
-        <!-- <div>refresh icon</div> -->
-        <h2 class="heading">Tally Counter</h2>
-        <div>
+      <div class="main-box fancy-border">
+         <h2 class="heading">Tally Counter</h2>
+         <div>
             <div class="result-output" id="result">0</div>
-        </div>
-        <div class="control-countdown">
+         </div>
+         <div class="control-countdown">
             <div class="decrement">
-              <img src="./assets/subtractbtn.png" alt="subtraction" id="subtraction">
+               <img src="./assets/subtractbtn.png" alt="subtraction" id="subtraction">
             </div>
             <div id="increment" class="increment">
-              <img src="./assets/addbtn.png" alt="add" id="add">
+               <img src="./assets/addbtn.png" alt="add" id="add">
             </div>
-        </div>
-        <div class="starting-point">
+         </div>
+         <div class="starting-point">
             <div class="start-value">
-              <img src="./assets/startvalue.png" alt="startvalue" id="startValue">
+               <img src="./assets/startvalue.png" alt="startvalue" id="startValue">
             </div>
             <div class="counter-name">
-             <img src="./assets/countername.png" alt="counter" id="counterName">
+               <img src="./assets/countername.png" alt="counter" id="counterName">
             </div>
-        </div>
-        <div class="reset-item">
-           <img src="./assets/resetbtn.png" alt="reset" id="reset">
-        </div>
-    </div>
+         </div>
+         <div class="reset-item">
+            <img src="./assets/resetbtn.png" alt="reset" id="reset">
+         </div>
+      </div>
       <!---count down box-->
       <script defer src="./js/custom js/app.js"></script>
-    
-</body>
+   </body>
 </html>
