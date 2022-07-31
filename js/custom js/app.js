@@ -70,10 +70,12 @@ function changeOutPut(initvalue){
 
 // increment current value
 incrementValue.addEventListener('click', () => {
+   navigator.vibrate(1000);
   initialValue++;
   changeOutPut(initialValue)
 })
 decrementValue.addEventListener('click', () => {
+  navigator.vibrate(1000);
   initialValue--;
   initialValue = initialValue < 0 || !initialValue || initialValue === Infinity ? 0 : initialValue;
   changeOutPut(initialValue)
