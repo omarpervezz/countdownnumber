@@ -1,0 +1,104 @@
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Digital;
+    src: url(../DigitalNumbers-Regular.woff);
+}
+:root{
+    --primary-color:#f0f0f0f0;
+    --mb:2rem;
+    --primary-width:500px;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 65%;
+}
+body{
+    font-size: 1.6rem;
+    text-rendering: optimizeLegibility;
+    background: #000;
+    display: flex;
+    flex-direction:
+    row;
+    align-items:
+    center;
+    justify-content:
+    center;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(245 226 226);
+}
+.main-box{
+    background: linear-gradient(#00000038,#000000ad), url(./background/cool-desktop-backgrounds-1920x1080-wallpaper-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--primary-width);
+    height: 338px;
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Digital;
+    background-position: center;
+    position: relative;
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: var(--mb);
+}
+.result-output{
+    max-width: 100%;
+    /* border: 2px solid #7a8988; */
+    text-align: right;
+    padding: .8rem 1rem;
+    border-radius: .4rem;
+    color: #70ea87;
+    font-weight: bold;
+    font-size: 2.6rem;
+    box-shadow: inset 4px -1px 22px #c2dfe0;
+}
+.control-countdown{
+    margin-top: 1rem;
+}
+.control-countdown,
+.starting-point{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.control-countdown > div,
+.starting-point > div{
+    width: 56%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.control-countdown div{
+    margin-bottom: .5rem;
+}
+.starting-point div{
+    margin-top: .5rem;
+}
+.reset-item{
+    position: absolute;
+    left: calc(var(--primary-width) * 0.447);
+    top: calc(var(--primary-width) * 0.39);
+    cursor: pointer;
+}
+.reset-item img{
+    width: 57px;
+}
