@@ -5,9 +5,9 @@ const resetImg = document.querySelector('.reset-item img');
 const incrementValue = document.querySelector('.increment');
 const decrementValue = document.querySelector('.decrement');
 const resetValue = document.querySelector('.reset-item');
-const currentValue = document.querySelector('.result-output');
+const currentValue = document.querySelectorAll('.result-output');
 let initialValue = 0;
-
+console.log(currentValue);
 // change image src when a user hover on
 // change image src when a user hover out
 function changeImg(){
@@ -62,30 +62,27 @@ const hoverOut = (event,element) => {
 }
 
 
+function changeOutPut(initvalue){
+  for(let x = 0; x < currentValue.length; x++){
+    currentValue[x].innerText = initvalue;
+   }
+}
 
 // increment current value
 incrementValue.addEventListener('click', () => {
   initialValue++;
-  currentValue.innerText = initialValue;
+  changeOutPut(initialValue)
 })
 decrementValue.addEventListener('click', () => {
   initialValue--;
   initialValue = initialValue < 0 || !initialValue || initialValue === Infinity ? 0 : initialValue;
-  currentValue.innerText = initialValue;
+  changeOutPut(initialValue)
 })
 
 resetValue.addEventListener('click', () => {
   initialValue = 0;
-  currentValue.innerText = initialValue;
+  changeOutPut(initialValue)
 })
-
-
-
-
-
-
-
-
 
 window.addEventListener('load', () => {
   changeImg();

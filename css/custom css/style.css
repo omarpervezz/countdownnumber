@@ -36,6 +36,15 @@ body{
     width: 100vw;
     height: 100vh;
     color: rgb(245 226 226);
+    position: relative;
+}
+.top-value{
+    font-family: Digital;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    font-size: 5rem !important;
+    box-shadow: none;
 }
 .main-box{
     background: linear-gradient(#00000038,#000000ad), url(./background/cool-desktop-backgrounds-1920x1080-wallpaper-1.jpg);
@@ -101,4 +110,9 @@ body{
 }
 .reset-item img{
     width: 57px;
+}
+@media(max-width:550px){
+   body{
+    align-items: flex-end;
+   } 
 }
