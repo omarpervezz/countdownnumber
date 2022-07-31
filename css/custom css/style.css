@@ -122,7 +122,9 @@ body{
 }
 @media(max-width:550px){
    body{
+    height: 80vh;
     align-items: flex-end;
+    overflow: hidden;
    } 
    .main-box{
     --primary-width:410px;
