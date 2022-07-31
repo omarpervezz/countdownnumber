@@ -161,7 +161,7 @@ body {
 	.main-box {
 		--primary-width: 410px;
 		width: var(--primary-width);
-        margin-bottom: 13rem;
+        margin-bottom: 11rem;
 	}
 
 	.reset-item {
