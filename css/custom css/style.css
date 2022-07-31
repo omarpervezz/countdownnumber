@@ -44,10 +44,10 @@ body{
     position: absolute;
     top: 0;
     font-size: 5rem !important;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 .main-box{
-    background: linear-gradient(#00000038,#000000ad), url(./background/cool-desktop-backgrounds-1920x1080-wallpaper-1.jpg);
+    background: linear-gradient(#000000bf,#000000c4), url(./background/cool-desktop-backgrounds-1920x1080-wallpaper-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: var(--primary-width);
@@ -63,13 +63,12 @@ body{
 .heading{
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: var(--mb);
 }
 .result-output{
     max-width: 100%;
-    /* border: 2px solid #7a8988; */
     text-align: right;
     padding: .8rem 1rem;
     border-radius: .4rem;
@@ -115,4 +114,12 @@ body{
    body{
     align-items: flex-end;
    } 
+   .main-box{
+    --primary-width:410px;
+    width:var(--primary-width);
+   }
+   .reset-item{
+    left: calc(var(--primary-width) * 0.433);
+    top: calc(var(--primary-width) * 0.46);
+   }
 }
