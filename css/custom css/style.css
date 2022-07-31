@@ -177,6 +177,8 @@ body {
 		top: calc(var(--primary-width) * 0.46);
 	}
     #refres{
-        bottom: 6rem;
+        bottom: 45rem;
+        transform: rotate(90deg);
+        left: -4.9rem;
     }
 }
