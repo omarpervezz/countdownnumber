@@ -7,7 +7,7 @@ const decrementValue = document.querySelector('.decrement');
 const resetValue = document.querySelector('.reset-item');
 const currentValue = document.querySelectorAll('.result-output'),
    topValue = document.querySelector('.top-value'),
-   mainBox = document.querySelector('.main-box');
+   mainBox = document.querySelector('.main-box'), refreshBtn = document.querySelector('#refres');
 const changeTheme = document.querySelector('#changeTheme');
 let initialValue = 0,
    white = '#fff',
@@ -103,4 +103,7 @@ changeTheme.addEventListener('click', () => {
 
 window.addEventListener('load', () => {
    changeImg();
+   refreshBtn.addEventListener('click', () => {
+    location.reload();
+   })
 });

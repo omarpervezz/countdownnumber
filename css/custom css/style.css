@@ -150,7 +150,15 @@ body {
 	border: none;
 	top: 24%;
 }
-
+#refres{
+    padding: .4rem 1.7rem;
+    font-size: 1.6rem;
+    font-family: Digital;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 @media(max-width:550px) {
 	body {
 		height: 100vh;
@@ -168,4 +176,7 @@ body {
 		left: calc(var(--primary-width) * 0.433);
 		top: calc(var(--primary-width) * 0.46);
 	}
+    #refres{
+        bottom: 6rem;
+    }
 }
