@@ -5,9 +5,9 @@ const resetImg = document.querySelector('.reset-item img');
 const incrementValue = document.querySelector('.increment');
 const decrementValue = document.querySelector('.decrement');
 const resetValue = document.querySelector('.reset-item');
-const currentValue = document.querySelectorAll('.result-output');
-let initialValue = 0;
-console.log(currentValue);
+const currentValue = document.querySelectorAll('.result-output'), topValue = document.querySelector('.top-value'), mainBox = document.querySelector('.main-box');
+const changeTheme = document.querySelector('#changeTheme');
+let initialValue = 0, white = '#fff', black = '#000', emptyItem = '';
 // change image src when a user hover on
 // change image src when a user hover out
 function changeImg(){
@@ -81,9 +81,30 @@ decrementValue.addEventListener('click', () => {
 
 resetValue.addEventListener('click', () => {
   initialValue = 0;
-  changeOutPut(initialValue)
+  changeOutPut(initialValue);
+   topValue.innerText = '';
 })
+
+
+// change theme 
+changeTheme.addEventListener('click', () => {
+   const body = document.querySelector('body');
+   console.dir(body);
+   if(body.style.backgroundColor == emptyItem && changeTheme.style.backgroundColor == emptyItem && changeTheme.style.color == emptyItem && mainBox.style.background == emptyItem){
+    body.style.backgroundColor = white;
+    mainBox.style.backgroundImage = `linear-gradient(#000000db,#057fc1a1)`;
+    changeTheme.style.backgroundColor = black;
+    changeTheme.style.color = white;
+   }else{
+    body.style.backgroundColor = emptyItem;
+    mainBox.style.background = emptyItem;
+    changeTheme.style.backgroundColor = emptyItem;
+    changeTheme.style.color = emptyItem;
+   }
+   changeTheme.style.border = 'none';
+})
+
 
 window.addEventListener('load', () => {
   changeImg();
-})
+});

@@ -103,12 +103,22 @@ body{
 }
 .reset-item{
     position: absolute;
-    left: calc(var(--primary-width) * 0.447);
-    top: calc(var(--primary-width) * 0.39);
+    left: calc(var(--primary-width) * 0.427);
+    top: calc(var(--primary-width) * 0.37);
     cursor: pointer;
 }
 .reset-item img{
-    width: 57px;
+    width: 73px;
+}
+#changeTheme{
+    position: absolute;
+    left: -5.7rem;
+    font-size: 1.6rem;
+    padding: .7rem 1.5rem;
+    transform: rotate(630deg);
+    color: #310f83;
+    cursor: pointer;
+    background: #a4dced;
 }
 @media(max-width:550px){
    body{
